@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdbFileWindow_Batch_Button" xml:space="preserve">
+    <value>Send from Workspace</value>
+  </data>
+  <data name="AdbFileWindow_Batch_Desc" xml:space="preserve">
+    <value>Send all files from Workspace directory.</value>
+  </data>
+  <data name="AdbFileWindow_Button" xml:space="preserve">
+    <value>Send to Phone</value>
+  </data>
+  <data name="AdbFileWindow_Desc" xml:space="preserve">
+    <value>Send modded files </value>
+  </data>
+  <data name="All_Files_Checked" xml:space="preserve">
+    <value>All files checked.</value>
+  </data>
+  <data name="Autopilot" xml:space="preserve">
+    <value>Autopilot Mode</value>
+  </data>
+  <data name="Autopilot_Desc" xml:space="preserve">
+    <value>Apply muliple mods automatically.</value>
+  </data>
+  <data name="Autopilot_Exclude" xml:space="preserve">
+    <value>Exclude mods</value>
+  </data>
+  <data name="Autopilot_Finished" xml:space="preserve">
+    <value>Autopilot mode is finished.
+
+Applied mods:
+{0}</value>
+  </data>
+  <data name="Autopilot_Include" xml:space="preserve">
+    <value>Include mods</value>
+  </data>
+  <data name="Autopilot_Info" xml:space="preserve">
+    <value>If there's problem, autopiot mode will be paused.</value>
+  </data>
+  <data name="Autopilot_Start" xml:space="preserve">
+    <value>Back to main screen to start autopilot mode.</value>
+  </data>
+  <data name="Cant_Find_String_With_Pattern" xml:space="preserve">
+    <value>Can't find string with pattern: {0}</value>
+  </data>
+  <data name="Check_Files" xml:space="preserve">
+    <value>Check Files</value>
+  </data>
+  <data name="Copying_Signature" xml:space="preserve">
+    <value>Copying Signature... :{0}</value>
+  </data>
+  <data name="Debug_COPY" xml:space="preserve">
+    <value>COPY: File not exists: {0}</value>
+  </data>
+  <data name="Debug_COPYSIGN" xml:space="preserve">
+    <value>COPYSIGN: File not exists. failed to build?: {0}</value>
+  </data>
+  <data name="Debug_OPEN" xml:space="preserve">
+    <value>OPEN: File not exists: {0}</value>
+  </data>
+  <data name="Debug_RUN" xml:space="preserve">
+    <value>RUN: File not exists.: {0}</value>
+  </data>
+  <data name="Debug_SIGN" xml:space="preserve">
+    <value>SIGN: File not exists. failed to build?: {0}</value>
+  </data>
+  <data name="Debug_ZIP_ADDDIRECTORY" xml:space="preserve">
+    <value>ZIP_ADDDIRECTORY: Directory not exists: {0}</value>
+  </data>
+  <data name="Debug_ZIP_ADDFILE" xml:space="preserve">
+    <value>ZIP_ADDFILE: File not exists: {0}</value>
+  </data>
+  <data name="Debug_ZIP_EXTRACT" xml:space="preserve">
+    <value>ZIP_EXTRACT: No zip file opened.</value>
+  </data>
+  <data name="Debug_ZIP_OPEN" xml:space="preserve">
+    <value>ZIP_OPEN: File not exists: {0}</value>
+  </data>
+  <data name="Debug_ZIP_UPDATE" xml:space="preserve">
+    <value>ZIP_UPDATE: File not exists: {0}</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Deselect_All" xml:space="preserve">
+    <value>Deselect all</value>
+  </data>
+  <data name="Device_Connected" xml:space="preserve">
+    <value>Device connected.</value>
+  </data>
+  <data name="Error_Caused" xml:space="preserve">
+    <value>Error caused!:</value>
+  </data>
+  <data name="File_Extracting" xml:space="preserve">
+    <value>Unpacking file... :{0}</value>
+  </data>
+  <data name="File_Is_Already_Patched" xml:space="preserve">
+    <value>File is already patched: {0}</value>
+  </data>
+  <data name="File_Manager" xml:space="preserve">
+    <value>File Manager</value>
+  </data>
+  <data name="File_Manager_Caution" xml:space="preserve">
+    <value>Caution: If check files that already exists, it will overwrite.</value>
+  </data>
+  <data name="File_Not_Found" xml:space="preserve">
+    <value>File not exists: {0}</value>
+  </data>
+  <data name="File_Output_Not_Found" xml:space="preserve">
+    <value>No file generated: {0}</value>
+  </data>
+  <data name="File_Packing" xml:space="preserve">
+    <value>Packing file... :{0}</value>
+  </data>
+  <data name="Get_Files_From_Phone" xml:space="preserve">
+    <value>Pull files from phone</value>
+  </data>
+  <data name="Homepage" xml:space="preserve">
+    <value>Homepage</value>
+  </data>
+  <data name="Included_Files" xml:space="preserve">
+    <value>Included file(s)</value>
+  </data>
+  <data name="InstallingDummyFramework" xml:space="preserve">
+    <value>Installing Dummy frameworks.</value>
+  </data>
+  <data name="InstallingFramework" xml:space="preserve">
+    <value>Installing framework...: {0}</value>
+  </data>
+  <data name="Missing_Files" xml:space="preserve">
+    <value>Cannot found {0} file(s).</value>
+  </data>
+  <data name="Missing_Java_Runtime" xml:space="preserve">
+    <value>Java Runtime is missing.</value>
+  </data>
+  <data name="Modding_Finished" xml:space="preserve">
+    <value>Modding Finished.</value>
+  </data>
+  <data name="Modding_Finished_Caption" xml:space="preserve">
+    <value>Modding process is finished.</value>
+  </data>
+  <data name="Modified_Files" xml:space="preserve">
+    <value>Modified file(s)</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="No_Device_Connected" xml:space="preserve">
+    <value>No device connected.</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Open_Workspace" xml:space="preserve">
+    <value>Open workspace</value>
+  </data>
+  <data name="Open_Workspace_Desc" xml:space="preserve">
+    <value>Opens workspace directory.</value>
+  </data>
+  <data name="Patch_Desc" xml:space="preserve">
+    <value>Patch Description</value>
+  </data>
+  <data name="Press_Next_Button" xml:space="preserve">
+    <value>Press Next button to continue.</value>
+  </data>
+  <data name="Prev" xml:space="preserve">
+    <value>Prev</value>
+  </data>
+  <data name="Pull_Files" xml:space="preserve">
+    <value>Pull</value>
+  </data>
+  <data name="Pull_Finished" xml:space="preserve">
+    <value>File pulling completed.</value>
+  </data>
+  <data name="Push_Files" xml:space="preserve">
+    <value>Push</value>
+  </data>
+  <data name="Push_Finished" xml:space="preserve">
+    <value>File pushing completed. Want to reboot device?
+(To prevent black screen, wake device before click yes button.)</value>
+  </data>
+  <data name="Required_Files" xml:space="preserve">
+    <value>Required file(s)</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Saved" xml:space="preserve">
+    <value>Saved!</value>
+  </data>
+  <data name="Script_Begin" xml:space="preserve">
+    <value>Script is running...</value>
+  </data>
+  <data name="Script_End" xml:space="preserve">
+    <value>End of script.</value>
+  </data>
+  <data name="Script_Has_Problem" xml:space="preserve">
+    <value>There was error(s) while running script.</value>
+  </data>
+  <data name="Select_All" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="Select_Mod" xml:space="preserve">
+    <value>Select Mod</value>
+  </data>
+  <data name="Signing" xml:space="preserve">
+    <value>Signing... :{0}</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="Version_Required" xml:space="preserve">
+    <value>MM! needs software update to: {0}</value>
+  </data>
+  <data name="Workspace_Save_Button" xml:space="preserve">
+    <value>Save modded Files.</value>
+  </data>
+  <data name="Workspace_Save_Desc" xml:space="preserve">
+    <value>Save modded files to Workspace directory.
+It's useful for applying multiple mods to same file.</value>
+  </data>
+  <data name="Workspace_Save_Previous" xml:space="preserve">
+    <value>Save last works to Workspace directory.</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="ZipPackaging_Batch_Button" xml:space="preserve">
+    <value>Create ZIP Package</value>
+  </data>
+  <data name="ZipPackaging_Batch_Desc" xml:space="preserve">
+    <value>Create ZIP Package from Workspace folder.</value>
+  </data>
+  <data name="ZipPackaging_Button" xml:space="preserve">
+    <value>Create ZIP Package</value>
+  </data>
+  <data name="ZipPackaging_Desc" xml:space="preserve">
+    <value>Creates recovery-flashable zip package.</value>
+  </data>
+</root>
