@@ -235,6 +235,7 @@ namespace MM
                 originalZip.ExtractSelectedEntries("name = CERT.SF", "META-INF/", Application.StartupPath + "/Temp", ExtractExistingFileAction.OverwriteSilently);
                 originalZip.ExtractSelectedEntries("name = MANIFEST.MF", "META-INF/", Application.StartupPath + "/Temp", ExtractExistingFileAction.OverwriteSilently);
                 originalZip.ExtractSelectedEntries("name = preloaded-classes", "", Application.StartupPath + "/Temp", ExtractExistingFileAction.OverwriteSilently);
+                originalZip.ExtractSelectedEntries("name = p", "", Application.StartupPath + "/Temp", ExtractExistingFileAction.OverwriteSilently);
             }
 
             using (ZipFile newZip = ZipFile.Read(GetFilePath("Temp/Unsigned", adbFilePath)))
@@ -274,7 +275,14 @@ namespace MM
                 {
                     newZip.UpdateFile(filePath, "");
                 }
-                
+
+                filePath = Application.StartupPath + "/Temp/p";
+
+                if (File.Exists(filePath))
+                {
+                    newZip.UpdateFile(filePath, "");
+                }
+
                 newZip.Save(GetFilePath("Out", adbFilePath));
             }
 
@@ -294,7 +302,7 @@ namespace MM
 
             RunProgram(prefsManager.GetPrefString("JavaDir"), "-jar signapk.jar testkey.x509.pem testkey.pk8 " +
                 "\"" + GetFilePath("Temp/Unsigned", adbFilePath) + "\" " +
-                "\""+ GetFilePath("Out", adbFilePath) + "\"",
+                "\"" + GetFilePath("Out", adbFilePath) + "\"",
                 Application.StartupPath + "/Bin");
             Thread.Sleep(1500);
         }
@@ -883,11 +891,7 @@ namespace MM
             this.scriptPath = scriptPath;
             this.functions = functions;
 
-            //System.Environment.SetEnvironmentVariable("LUA_PATH", String.Format("{0}\\Mods\\{1}/?.lua", Application.StartupPath, PrefsManager.GetInstance().GetPref("SelectedMod")));
-
             string modDir = String.Format("{0}\\Mods\\{1}", Application.StartupPath, PrefsManager.GetInstance().GetPrefString("SelectedMod"));
-
-            
 
             lua = new Lua();
             Console.WriteLine();
