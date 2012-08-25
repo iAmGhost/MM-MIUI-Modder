@@ -44,7 +44,7 @@
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.richTextBox1.Size = new System.Drawing.Size(171, 53);
             this.richTextBox1.TabIndex = 4;
-            this.richTextBox1.Text = "Created by iAmGhost\n\nhttp://iamghost.kr\n\n\n\n\n\n\nhttp://youtu.be/CP1Q3aZzilY\n\n";
+            this.richTextBox1.Text = "Created by iAmGhost\n\nhttp://iamghost.kr\n\n\n\n\n\n\nhttp://youtu.be/Q7fqkpRqdt0\n";
             this.richTextBox1.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.richTextBox1_LinkClicked);
             // 
             // button_Tools
