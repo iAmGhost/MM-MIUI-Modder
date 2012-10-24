@@ -72,23 +72,21 @@ namespace MM
             string resultString = "";
             string javaDir = "";
 
-            string windowsDir = Environment.GetEnvironmentVariable("windir");
-            if (File.Exists(windowsDir + "/system32/java.exe"))
+            string system32Directory = Path.Combine(Environment.ExpandEnvironmentVariables("%windir%"), "system32");
+            if (Environment.Is64BitOperatingSystem && !Environment.Is64BitProcess)
             {
+                // For 32-bit processes on 64-bit systems, %windir%\system32 folder
+                // can only be accessed by specifying %windir%\sysnative folder.
+                system32Directory = Path.Combine(Environment.ExpandEnvironmentVariables("%windir%"), "sysnative");
+            }
 
-                javaDir = windowsDir + "/system32/java.exe";
-            }
-            else if (File.Exists(windowsDir + "/SysWOW64/java.exe"))
+            if (File.Exists(system32Directory + "/java.exe"))
             {
-                javaDir = windowsDir + "/SysWOW64/java.exe";
-            }
-            else if (File.Exists(windowsDir + "/SysWOW32/java.exe"))
-            {
-                javaDir = windowsDir + "/SysWOW32/java.exe";
+                javaDir = system32Directory + "/java.exe";
             }
             else
             {
-                resultString = lang.GetString("Missing_Java_Runtime"); ;
+                resultString = lang.GetString("Missing_Java_Runtime");
             }
 
             try

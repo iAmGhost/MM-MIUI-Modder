@@ -17,7 +17,7 @@ namespace MM
 
         public PrefsManager()
         {
-            SetPrefString("Version", "v3.4");
+            SetPrefString("Version", "v3.5");
         }
 
         public void SetPrefString(string key, string value)
