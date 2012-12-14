@@ -84,8 +84,21 @@ namespace MM
             {
                 javaDir = system32Directory + "/java.exe";
             }
+            else if (File.Exists(Environment.SystemDirectory + "/java.exe"))
+            {
+                javaDir = Environment.SystemDirectory + "/java.exe";
+            }
+            else if (File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.Windows) + "/system32/java.exe"))
+            {
+                javaDir = Environment.GetFolderPath(Environment.SpecialFolder.Windows) + "/system32/java.exe";
+            }
+            else if (File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.Windows) + "/syswow64/java.exe"))
+            {
+                javaDir = Environment.GetFolderPath(Environment.SpecialFolder.Windows) + "/syswow64/java.exe";
+            }
             else
             {
+                javaDir = "java.exe";
                 resultString = lang.GetString("Missing_Java_Runtime");
             }
 
